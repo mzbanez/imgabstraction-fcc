@@ -11,7 +11,6 @@ var googleSearch = new GoogleSearch({
 
 
 app.get('/api/imagesearch/:query(*)',function(req,res){
-  ///new/:url(*)
 
   var query = req.params.query;
   var qoffset =req.query.offset ? req.query.offset : 1;
@@ -56,8 +55,7 @@ app.get('/api/imagesearch/:query(*)',function(req,res){
           });
   
    }else{
-       console.log("Format queries correctly");
-      //res.send("Format queries correctly");
+        res.send("Format queries correctly");
    }
  
 }); 
