@@ -2,11 +2,11 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var mongo = require("mongodb").MongoClient;
-var dburl = 'mongodb://imgabstraction:freecodecamp@ds021689.mlab.com:21689/imgabstraction';
+var dburl =process.env.dburl;
 var GoogleSearch = require('google-search');
 var googleSearch = new GoogleSearch({
-  key: 'AIzaSyAuWRw6WGr8HB75Kzt8HYtwOSfVOqYuvZs',
-  cx: '009114193757195798197:tlgcoymbxlw'
+  key: process.env.apiKey,
+  cx: process.env.cx
 });
 
 
@@ -84,7 +84,6 @@ app.get('/', function(req,res){
       console.log('Sent:', fileName);
     }
   });
-
 }); 
 
 
