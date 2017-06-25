@@ -13,10 +13,13 @@ I can paginate through the responses by adding a ?offset=2 parameter to the URL.
 
 I can get a list of the most recently submitted search strings.
 
+
+
+
 Sample Usage:
 
 for image abstraction: 
-https://imgabstraction-mzbanez.glitch.me/api/imagesearch/sheep?offset=1
+https://imgabstraction-mzbanez.glitch.me/api/imagesearch/cats?offset=5
  
 to get the recent search: 
 https://imgabstraction-mzbanez.glitch.me/api/latest
